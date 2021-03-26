@@ -1,0 +1,15 @@
+footer {
+
+    background-color: rgb(49, 49, 49);
+    padding: 1em 1em;
+    
+    color: rgb(82, 82, 82);
+    text-align: center;
+}
+.foooter-tag{
+    position: relative;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+
+}

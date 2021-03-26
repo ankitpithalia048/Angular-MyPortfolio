@@ -1,0 +1,57 @@
+
+.container{
+    margin: 5rem 7rem;
+    /* background-color: salmon; */
+}
+.inavlid {
+    border:1px solid red;
+}
+span{
+    color: rgb(233, 53, 53);
+}
+
+.section{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+/* header section */
+.heading {
+    text-align: center;
+    margin: 4rem 4rem;
+    color: white;
+}
+
+
+/* form section  */
+form{
+    margin-top:25px;
+  display:inline-block;
+}
+.Iform{
+    text-align: center;
+    background-color: #c485a7;
+}
+
+.Ibutton{
+    margin-bottom: 5rem;
+    background:rgba(197, 15, 100, 0.33) ! important;
+    color:#fff;
+    position:relative;
+    left:0px;
+    top:25px; 
+    width:100px;
+    cursor:pointer;
+}
+input{
+    display:inline-block;
+  height:34px;
+  vertical-align:middle;
+  position:relative;
+  bottom:14px;
+  right:9px;
+  border-radius:22px;
+  width:220px;
+  box-sizing:border-box;
+  padding:0 18px; 
+}

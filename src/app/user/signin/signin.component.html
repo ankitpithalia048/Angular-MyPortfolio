@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+    </div>
+    
+    <div class="col align-self-center Iform">
+      <h2 class="header">Sign In Forms</h2>
+
+      <form [formGroup]="userForm" (ngSubmit)="handleFormSubmit(userForm.value)" >
+    
+          
+           <input type="text" formControlName="userName" [ngClass]="{'invalid': formSubmitted && formControls.userName.errors}" placeholder="UserName" /><div class="row">
+             
+           </div>
+          <span *ngIf="formSubmitted && formControls.userName.errors">UserName is Incorrect</span>
+          <br />
+          <br />
+           <input type="password" formControlName="password"[ngClass]="{'invalid': formSubmitted && formControls.password.errors}" placeholder="Password"/><div class="row">
+             
+           </div>
+          <span *ngIf="formSubmitted && formControls.password.errors">Password is incorrect</span>
+    <br><br>
+          <button type="submit" name="submit" class="btn  Ibutton">Login</button>
+      </form>
+    </div><div class="col"></div>
+    
+
+  
+</div></div>

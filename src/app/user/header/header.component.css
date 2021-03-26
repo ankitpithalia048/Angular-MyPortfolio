@@ -1,0 +1,16 @@
+ 
+  ul li a:hover{
+    border-bottom: 1px solid rgb(221, 217, 231);    
+  }
+  
+  .onhover{
+    cursor: pointer;
+  
+  }
+  .signIn {
+      border: 1px solid white;
+  }
+  .signIn:hover{
+    border: none;
+    border-bottom: none;
+  }

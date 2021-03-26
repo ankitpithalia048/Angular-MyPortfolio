@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <div class="col-2 align-self-center">
+    
+        </div>
+        
+   
+    <div class="col align-self-center Iform">
+        <h2 class="heading">Sign Up Forms</h2>
+    <form [formGroup]="userForm" (ngSubmit)="handleFormSubmit(userForm.value)">
+
+        <input type="text" [ngClass]="{'invalid': formSubmitted && formControls.firstName.errors}" placeholder="FirstName"
+            formControlName="firstName" />
+
+        <span *ngIf="formSubmitted && formControls.firstName.errors">FirstName is requid</span>
+        <br />
+        <br>
+
+         <input type="text" [ngClass]="{'invalid': formSubmitted && formControls.lastName.errors}" placeholder="LastName"
+            formControlName="lastName" /><span *ngIf="formSubmitted && formControls.lastName.errors">LastName is requid</span> 
+        <br>
+        <br>
+        
+         <input type="email" formControlName="email" [ngClass]="{'invalid': formSubmitted && formControls.email.errors}" placeholder="Email" /> 
+        <span *ngIf="formSubmitted && formControls.email.errors">Email should be valid</span>
+        <br /><br>
+        
+        <input type="text" formControlName="userName" [ngClass]="{'invalid': formSubmitted && formControls.userName.errors}"  placeholder="Username"/> 
+        <span *ngIf="formSubmitted && formControls.userName.errors">Email should be valid</span>
+        <br /><br>
+        
+         <input type="password" formControlName="password" [ngClass]="{'invalid': formSubmitted && formControls.password.errors}"  placeholder="Password"/>
+        <span *ngIf="formSubmitted && formControls.password.errors">Password minlength 6 requried</span>
+<br><br>
+        <button type="submit" name="submit" class="btn Ibutton">Signup</button>
+    </form>
+</div>
+    <div class="col-2"></div>
+</div>
